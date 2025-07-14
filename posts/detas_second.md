@@ -1,9 +1,9 @@
 ---
-title: "The Beginning"
+title: "After The Beginning"
 image: "/images/DetaMeetup7.png"
 date: 2025-07-01
 description: "How a handful of curious students turned casual study sessions into DeTA — a community that codes, learns, and grows together."
-tags: [community, study-groups, mentorship, open-source]
+tags: [bruh]
 ---
 
 # The Beginning  
