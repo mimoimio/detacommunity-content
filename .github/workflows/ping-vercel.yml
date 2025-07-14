@@ -1,7 +1,7 @@
 name: Rebuild site when Markdown changes
 on:
   push:
-    branches: [main]   # whichever branch holds published content
+    branches: [main, dev]   # branches that trigger site rebuild
 jobs:
   ping-vercel:
     runs-on: ubuntu-latest
