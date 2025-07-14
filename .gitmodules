@@ -1,4 +1,0 @@
-[submodule "content"]
-	path = content
-	url = https://github.com/mimoimio/detacommunity-content.git
-	branch = main
