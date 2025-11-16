@@ -1,4 +1,13 @@
-﻿# 2025 First Blog Post
+﻿---
+title: "2025 First Blog Post"
+image: "/images/DetaMeetup7.png"
+date: 2025-11-16
+description: "Some rules to write a blog post for DeTA Community, and Git Working Tree"
+author: rahim.aiman@gmail.com
+tags: [git, github actions]
+---
+
+# 2025 First Blog Post
 Authored By : Aiman Rahim, Grad.Eng
 ## Introduction
 DeTA hasn't been writing anything at all. Even from the beginning, and I think it's time we write something and invite guest writers. So, this is pretty much DeTA's first ***real*** blog post.
