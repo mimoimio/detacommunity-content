@@ -21,8 +21,8 @@ Some guidelines to make this interesting:
 
 With that out of the way, let's start with something small and simple. Git, a software every developer in the world knows. Today as I was using Claude Code to redesign my [Website](https://plashspeed-aiman.github.io), I stumbled a small but neat piece of knowledge. It's located in my ci.yml and it looks like this :
 ```yml
-- name: deploy to github pages  
-  run: |  
+- name: deploy to github pages
+  run: |
     git --work-tree dist add --all  
     git commit -m "deploy to github pages"  
     git push origin HEAD:gh-pages --force
@@ -34,8 +34,12 @@ Set the path to the working tree. It can be an absolute path or a path relative 
 This can also be controlled by setting the GIT_WORK_TREE environment variable and the core.worktree configuration variable 
 (see core.worktree in [git-config[1]](https://git-scm.com/docs/git-config) for a more detailed discussion).
 ```
+
 A working tree acts as a "workspace" for your files as mentioned [here](https://stackoverflow.com/questions/3689838/git-difference-between-head-working-tree-and-index):
-```1.  the  **workspace**  is the directory tree of (source) files that you see and edit.```
+
+``` 
+1.  the  **workspace**  is the directory tree of (source) files that you see and edit.
+```
 
 What I can conclude from the Github Actions file, is that after Bun has finished building the app, and create a /dist folder, the working tree is set to the dist folder, then GHA (Github Actions) commits the output files **only** and then pushes to the branch `gh-pages` of the same repo.
 
